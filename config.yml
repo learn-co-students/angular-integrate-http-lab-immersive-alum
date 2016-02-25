@@ -1,0 +1,21 @@
+-  request:
+      url: ^/rest/user$
+      method: GET
+   response:
+    - status: 200
+      latency: 304
+      headers:
+         content-type: application/json
+      body: {"first_name": "Steve","last_name": "Jobs","email": "bill@microsoft.com"}
+-  request:
+      url: ^/rest/user$
+      method: POST
+   response:
+    - status: 200
+      latency: 204
+      headers:
+         content-type: application/json
+      body: >
+         {
+          "status": "success"
+         }
