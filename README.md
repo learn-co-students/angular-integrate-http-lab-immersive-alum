@@ -17,8 +17,8 @@ sudo npm install -g stubby
 
 Then, run `stubby -d config.yml` in your command line.
 
-Now, we've got our mocked backend running. This has two endpoints under the url `/rest/user` - we can issue both GET and POST requests to it.
+Now, we've got our mocked backend running. This has two endpoints under the url `http://0.0.0.0:8882/rest/user` - we can issue both GET and POST requests to it.
 
-Create a service that queries this endpoint, and display the results in the view.
+Create a service that queries this endpoint inside a function named `getUser`, and log the result to the console.
 
-The service should also have a method to POST to this endpoint, checking the `status` property on the response.
+The service should also have a method to POST to this endpoint, checking the `status` property on the response (it should be "success"!)
