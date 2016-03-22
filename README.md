@@ -19,6 +19,6 @@ Then, run `stubby -d config.yml` in your command line.
 
 Now, we've got our mocked backend running. This has two endpoints under the url `http://0.0.0.0:8882/rest/user` - we can issue both GET and POST requests to it.
 
-Create a service that queries this endpoint inside a function named `getUser`, and log the result to the console.
+Create a service that queries this endpoint inside a function named `getUser`, and returns the response from the API.
 
-The service should also have a method to POST to this endpoint, checking the `status` property on the response (it should be "success"!)
+The service should also have a method to called `updateUser` to POST to this endpoint. This method should return the response from the API as well.
